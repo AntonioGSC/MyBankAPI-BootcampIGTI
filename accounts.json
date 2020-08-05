@@ -1,0 +1,20 @@
+{
+  "nextID": 5,
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Antonio Carvalho",
+      "balance": 1411123
+    },
+    {
+      "id": 3,
+      "name": "Antonio Santos",
+      "balance": 141223
+    },
+    {
+      "id": 4,
+      "name": "Antonio Gabriel dos Santos Carvalho",
+      "balance": 1000
+    }
+  ]
+}

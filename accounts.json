@@ -1,39 +1,9 @@
 {
-  "nextID": 8,
+  "nextID": 2,
   "accounts": [
     {
       "id": 1,
-      "name": "Antonio Gabriel",
-      "balance": 200
-    },
-    {
-      "id": 2,
-      "name": "Camily Gomes",
-      "balance": 20000.5
-    },
-    {
-      "id": 3,
-      "name": "Blue",
-      "balance": 14
-    },
-    {
-      "id": 4,
-      "name": "George",
-      "balance": 141
-    },
-    {
-      "id": 5,
-      "name": "Jefrrey",
-      "balance": 1411
-    },
-    {
-      "id": 6,
-      "name": "Leonardo Carvalho",
-      "balance": 1411123
-    },
-    {
-      "id": 7,
-      "name": "Leozinho",
+      "name": "Antonio Carvalho",
       "balance": 1411123
     }
   ]

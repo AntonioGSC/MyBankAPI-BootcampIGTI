@@ -1,0 +1,48 @@
+2020-08-06T15:54:50.640Z [my-bank-api] info: API Started!
+2020-08-06T15:55:13.603Z [my-bank-api] info: undefined
+2020-08-06T15:55:25.702Z [my-bank-api] info: API Started!
+2020-08-06T15:57:04.687Z [My-Bank-Api] info: API Started!
+2020-08-06T15:58:13.864Z [My-Bank-Api] info: API Started!
+2020-08-06T15:59:09.884Z [My-Bank-Api] info: API Started!
+2020-08-06T15:59:48.604Z [My-Bank-Api] info: API Started!
+2020-08-06T16:01:22.511Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:04:42.126Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:04:51.672Z [My-Bank-Api] error: POST undefined : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:04:56.969Z [My-Bank-Api] error: POST undefined : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:05:15.822Z [My-Bank-Api] error: POST undefined : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:05:43.341Z [My-Bank-Api] error: GET undefined : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:05:57.580Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:06:11.129Z [My-Bank-Api] error: POST undefined : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:06:24.574Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:07:17.897Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:07:25.995Z [My-Bank-Api] error: POST undefined : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:09:03.802Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:09:09.011Z [My-Bank-Api] error: POST undefined : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:10:08.435Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:10:31.680Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:11:02.469Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:11:12.746Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:11:17.723Z [My-Bank-Api] error: POST /account : ENOENT: no such file or directory, open 'c:\Users\AntonioGSC\Projetos\Cursos\BootCamp Full Stack IGTI\Aulas\M2P2\My-Bank-API\accounts.json'
+2020-08-06T16:11:43.863Z [My-Bank-Api] info: API Started and File Created!
+2020-08-06T16:12:55.716Z [My-Bank-Api] info: API Started!
+2020-08-06T16:13:08.636Z [My-Bank-Api] info: API Started!
+2020-08-06T16:13:16.296Z [My-Bank-Api] info: API Started!
+2020-08-06T16:13:34.377Z [My-Bank-Api] info: API Started!
+2020-08-06T16:13:40.823Z [My-Bank-Api] info: API Started!
+2020-08-06T16:14:18.506Z [My-Bank-Api] info: API Started!
+2020-08-06T16:14:29.188Z [My-Bank-Api] info: POST /account - {"id":1,"name":"Antonio dos Santos","balance":1423}
+2020-08-06T16:14:39.890Z [My-Bank-Api] info: POST /account - {"id":2,"name":"Antonio Carvalho","balance":142312}
+2020-08-06T16:14:45.920Z [My-Bank-Api] error: GET /account : Cannot read property 'id' of undefined
+2020-08-06T16:14:57.658Z [My-Bank-Api] info: GET /account/2 - {"id":2,"name":"Antonio Carvalho","balance":142312}
+2020-08-06T16:17:32.173Z [My-Bank-Api] info: API Started!
+2020-08-06T16:17:37.203Z [My-Bank-Api] info: DELETE /account/undefined - {"nextID":3,"accounts":[{"id":1,"name":"Antonio dos Santos","balance":1423},{"id":2,"name":"Antonio Carvalho","balance":142312}]}
+2020-08-06T16:19:11.475Z [My-Bank-Api] info: API Started!
+2020-08-06T16:19:38.187Z [My-Bank-Api] info: DELETE /account/5
+2020-08-06T16:19:38.618Z [My-Bank-Api] info: API Started!
+2020-08-06T16:20:20.188Z [My-Bank-Api] info: API Started!
+2020-08-06T16:20:48.185Z [My-Bank-Api] info: API Started!
+2020-08-06T16:20:49.292Z [My-Bank-Api] info: PUT /account - {"id":4,"name":"Antonio Gabriel dos Santos Carvalho","balance":1412123}
+2020-08-06T16:21:01.151Z [My-Bank-Api] info: PUT /account - {"id":2,"name":"Antonio Gabriel dos Santos Carvalho","balance":1412123}
+2020-08-06T16:27:16.130Z [My-Bank-Api] info: API Started!
+2020-08-06T16:27:30.447Z [My-Bank-Api] info: PUT /account - {"id":29,"name":"Antonio Gabriel dos Santos Carvalho","balance":1412123}
+2020-08-06T16:27:56.536Z [My-Bank-Api] info: Patch /account/updateBalance - {"id":2,"balance":1000}

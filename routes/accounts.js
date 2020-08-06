@@ -5,7 +5,7 @@ const { readFile, writeFile } = fs;
 
 const router = express.Router();
 
-router.post('/', async (req, res) => {
+router.post('/', async (req, res, next) => {
   try {
     let account = req.body;
     const data = await readFile(global.fileName);
@@ -20,37 +20,41 @@ router.post('/', async (req, res) => {
 
     await writeFile(global.fileName, JSON.stringify(json, null, 2));
 
+    logger.info(`POST /account - ${JSON.stringify(account)}`);
     res.send(account);
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
   }
 });
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res, next) => {
   try {
     const data = await readFile(global.fileName);
     const json = JSON.parse(data);
     delete json.nextID;
+
+    logger.info(`GET /account`);
     res.send(json);
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
   }
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res, next) => {
   try {
     const data = await readFile(global.fileName);
     const json = JSON.parse(data);
     const account = json.accounts.find(
       (account) => account.id === parseInt(req.params.id)
     );
+    logger.info(`GET /account/$:id - ${JSON.stringify(account)}`);
     res.send(account);
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', async (req, res, next) => {
   try {
     const data = await readFile(global.fileName);
     const json = JSON.parse(data);
@@ -58,13 +62,14 @@ router.delete('/:id', async (req, res) => {
       (account) => account.id !== parseInt(req.params.id)
     );
     await writeFile(global.fileName, JSON.stringify(json, null, 2));
+    logger.info(`DELETE /account/:id - ${req.params.id}`);
     res.send('Conta Removida com sucesso');
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
   }
 });
 
-router.put('/', async (req, res) => {
+router.put('/', async (req, res, next) => {
   try {
     const account = req.body;
     const data = JSON.parse(await readFile(global.fileName));
@@ -74,13 +79,14 @@ router.put('/', async (req, res) => {
 
     await writeFile(global.fileName, JSON.stringify(data, null, 2));
 
+    logger.info(`PUT /account - ${JSON.stringify(account)}`);
     res.send(account);
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
   }
 });
 
-router.patch('/updateBalance', async (req, res) => {
+router.patch('/updateBalance', async (req, res, next) => {
   try {
     const account = req.body;
     const data = JSON.parse(await readFile(global.fileName));
@@ -89,11 +95,16 @@ router.patch('/updateBalance', async (req, res) => {
     data.accounts[index].balance = account.balance;
 
     await writeFile(global.fileName, JSON.stringify(data, null, 2));
-
+    logger.info(`Patch /account/updateBalance - ${JSON.stringify(account)}`);
     res.send(data.accounts[index]);
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
   }
+});
+
+router.use((err, req, res, next) => {
+  logger.error(`${req.method} ${req.baseUrl} : ${err.message}`);
+  res.status(400).send({ error: err.message });
 });
 
 export default router;
